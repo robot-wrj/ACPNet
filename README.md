@@ -57,7 +57,7 @@ home
 
 ## Train CLNet from Scratch
 
-An example of run.sh is listed below. Simply use it with `sh run.sh`. It starts to train CLNet from scratch. Change scenario using `--scenario`, and change dataset type using '--datatype'. Change '--nc' from 3 to 2 if using "KU Leuven" dataset.
+An example of run.sh is listed below. Simply use it with `sh run.sh`. It starts to train ACPNet from scratch. Change scenario using `--scenario`, and change dataset type using '--datatype'. Change '--nc' from 3 to 2 if using "KU Leuven" dataset.
 
 ``` bash
 python /home/CLNet/main.py \
