@@ -42,7 +42,7 @@ We recommend you to arrange the project tree as follows.
 
 ```
 home
-├── CLNet  # The cloned CLNet repository
+├── ACPNet  # The cloned ACPNet repository
 │   ├── dataset
 │   ├── models
 │   ├── utils
@@ -55,12 +55,12 @@ home
 ...
 ```
 
-## Train CLNet from Scratch
+## Train ACPNet from Scratch
 
 An example of run.sh is listed below. Simply use it with `sh run.sh`. It starts to train ACPNet from scratch. Change scenario using `--scenario`, and change dataset type using '--datatype'. Change '--nc' from 3 to 2 if using "KU Leuven" dataset.
 
 ``` bash
-python /home/CLNet/main.py \
+python /home/ACPNet/main.py \
   --data-dir '/home/CTW2019' \
   --scenario 'random' \
   --epochs 300 \
