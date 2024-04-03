@@ -4,7 +4,7 @@ This is the PyTorch implementation of the paper [CSI-Based MIMO Indoor Positioni
 If you feel this repo helpful, please cite our paper:
 
 ```
-@article{ji2021clnet,
+@article{wan2024csibased,
   title={CSI-Based MIMO Indoor Positioning Using Attention-Aided Deep Learning},
   author={Wan, Rongjie and Chen, Yuxing and Song, Suwen and Wang, Zhongfeng},
   journal={IEEE Communications Letters},
