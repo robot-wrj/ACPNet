@@ -31,7 +31,7 @@ To use this project, you need to ensure the following requirements are installed
 #### A. Data Preparation
 
 The channel state information (CSI) matrix is from [CTW2019](https://data.ieeemlc.org/Ds1Detail).
-For the sake of program simplicity, the data has been pre-divided in the code and the data file has been named as random.h5. If you wish to perform dataset partitioning on your own, you can refer to /utils/data.py. Alternatively, you can uncomment lines 67-77 in /dataset/CTW2019.py and comment out lines 78-83 to perform dataset partitioning while running the code.
+For the sake of program simplicity, the data has been pre-divided in random and the data file has been named as random.h5. If you wish to perform dataset partitioning on your own, you can refer to /utils/data.py as well as the paper [Improving CSI-based Massive MIMO Indoor Positioning using Convolutional Neural Network](https://ieeexplore.ieee.org/document/9482604). Alternatively, you can uncomment lines 67-77 in /dataset/CTW2019.py and comment out lines 78-83 to perform dataset partitioning while running the code.
 You can also use the data from [KU Leuven ultra dense indoor MAMIMO CSI dataset](https://ieee-dataport.org/open-access/ultra-dense-indoor-mamimo-csi-dataset).
 
 You can generate your own dataset according to the [DeepMIMO](https://www.deepmimo.net/) as well. The details of data pre-processing can be found in their website.
@@ -48,7 +48,7 @@ home
 │   ├── utils
 │   ├── main.py
 ├── CTW2019  # The data folder
-│   ├── random.mat
+│   ├── random.h5
 │   ├── ...
 ├── Experiments
 │   ├── run.sh  # The bash script
@@ -57,7 +57,7 @@ home
 
 ## Train ACPNet from Scratch
 
-An example of run.sh is listed below. Simply use it with `sh run.sh`. It starts to train ACPNet from scratch. Change scenario using `--scenario`, and change dataset type using '--datatype'. Change '--nc' from 3 to 2 if using "KU Leuven" dataset.
+An example of run.sh is listed below. Simply use it with `sh run.sh`. It starts to train ACPNet from scratch. Change data partitioning method using `--scenario`, and change dataset type using '--datatype'. Change '--nc' from 3 to 2 if using "KU Leuven" dataset.
 
 ``` bash
 python /home/ACPNet/main.py \
